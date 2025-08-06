@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Form Assignment</title>
+</head>
+<body>
+
+<header>
+    <h1>Enhanced HTML5 Assignment</h1>
+    <p>PLP Software Engineering – Week 2 Advanced HTML</p>
+</header>
+
+<main>
+
+    <!-- Lists Section -->
+    <section>
+        <h2>Learning Topics</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>JavaScript Basics</li>
+            <li>Python Programming</li>
+        </ul>
+
+        <h3>Steps in My Learning Journey</h3>
+        <ol>
+            <li>Plan and design the layout</li>
+            <li>Write semantic HTML structure</li>
+            <li>Test in a browser</li>
+        </ol>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <h2>Weekly Study Timetable</h2>
+        <table border="1" cellpadding="6">
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td>HTML & CSS Basics</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>HTML Forms</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Python Basics</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+        <h2>Learning Resources</h2>
+        <img src="https://via.placeholder.com/400x250" alt="Learning Illustration">
+
+        <h3>Motivational Video</h3>
+        <video width="400" controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <h3>Background Music</h3>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+        <h2>Learning Feedback Form</h2>
+        <form action="#" method="post" autocomplete="on">
+
+            <fieldset>
+                <legend>Personal Information</legend>
+
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Dr. Vee" required minlength="3">
+                <br><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="rachelikyumeh22@gmail.com" required>
+                <br><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+2349033821560" pattern="[+0-9]{14}" required>
+                <small>Include country code</small>
+                <br><br>
+
+                <label for="student-id">Student ID:</label>
+                <input type="text" id="student-id" name="student-id" value="PLP-2025-001" readonly>
+                <br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Learning Feedback</legend>
+
+                <label for="topic">Topic:</label>
+                <select id="topic" name="topic" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="python">Python</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                </select>
+                <br><br>
+
+                <label for="rating">Rate your understanding so far (1-10):</label>
+                <input type="number" id="rating" name="rating" min="1" max="10" placeholder="7" required>
+                <br><br>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" placeholder="I have understood the basics of Python and I'm looking forward to learning more." minlength="10" required></textarea>
+                <br><br>
+            </fieldset>
+
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 PLP Student – Advanced HTML Assignment</p>
+</footer>
+
+</body>
+</html>
